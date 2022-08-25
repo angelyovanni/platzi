@@ -1,5 +1,15 @@
 git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
+### Guardar cambios
+-git add file
+-git commit -m "mensaje"
+
+### Bajar de Github al Git 
+-git pull origin main 
+
+### Subir Cambios a Github
+-git push origin main 
+
 ### Crear Tags ###
 -Id commit 
 -git tag -a v0.1 -m "Mensaje" 158gd68
@@ -7,10 +17,12 @@ git config --global alias.superlog "log --graph --abbrev-commit --decorate --dat
 v0.1
 
 -git show-ref --tags 
-numero_commit refs/tags/v0.1
+numero_commit refs/tags/v0.1 
 
-### Bajar de Github al Git 
--git pull origin main 
+### Eliminar Tag Git 
+git tag -d v0.1
+### Eliminar en Github
+git push origin :refs/tags/v0.1
 
 ### Enviar Tags Github
-- git push origin --tags 
+- git push origin --tags

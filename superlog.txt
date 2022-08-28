@@ -27,3 +27,21 @@ git push origin :refs/tags/v0.1
 ### Enviar Tags Github
 -git pull origin main 
 - git push origin --tags
+
+### Fork
+-git clone url
+
+# Eliminar Branch 
+-git branch -D nombre 
+
+# Git stash ### envia cambios a memoria temporal
+-git stash list
+-git stash branch nombre 
+### devolver cambios 
+-git stash 
+### Eliminar cambios
+-git stash drop 
+
+### Git Clean comprueba archivos a eliminar 
+-git clean --dry-run
+-git clean -f #ejecutar 

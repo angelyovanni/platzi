@@ -1,0 +1,32 @@
+tuplas = ('a','b','c') #inmutable
+lista  = ['a','b','c','c','a'] #arreglos
+set"conjunto" = {1,2,3} # No permite valores duplicados
+diccionario= {'clave1':10, 'clave2':20, 'clave3':30}
+
+
+lista.append('d')
+print(lista)
+[a,b,c,d]
+lista.remove('d')
+lista[0]= 'z'
+set = | imrpime valores de 2 set q no se dupliquen
+set = & indica q valores se repiten en 2 set 
+set = - indica valores diferentes entre 2 set
+
+###### procesar textos ######
+mitexto.capitalize() # Primera letra Mayus
+mitexto.title() # Primera letra cada parrafo Mayu
+mitexto.lower() # Todo minuscula
+mitexto.upper() # Todo Mayus
+mitexto.replace('a', 'o') # Remplazar todas las a x o
+mitexto.find(texto)
+mitexto.split() # convierte el texto en lista
+'-'.join(mitexto) # hola-esto-es-un-texto
+mitexto.replace(',', '').lower().split() #elimina comas, convirte a Minus y luego convierte en lista
+
+####
+range (5,10)
+len(lista) ### indica longitud
+if "mensaje" in lista: 
+	print ("He encontrado mensaje en la lista")
+sorted(lista) # ordena valores

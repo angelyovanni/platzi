@@ -1,5 +1,9 @@
 git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
+git shortlog -sn = muestra cuantos commit han hecho cada miembros del equipo.
+git shortlog -sn --all = muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado
+git shortlog -sn --all --no-merge = muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges
+
 ### Guardar cambios
 -git add file
 -git commit -m "mensaje"
@@ -45,3 +49,34 @@ git push origin :refs/tags/v0.1
 ### Git Clean comprueba archivos a eliminar 
 -git clean --dry-run
 -git clean -f #ejecutar 
+
+### Git cherry-pick # traer cambios especificos
+-git cherry-pick #commit 
+
+### RollBack
+-git -reflog
+-git reset HARD# reset todo
+-git reset SOFT# reset mantiene staging 
+-git reset HEAD@{23} #SOFT
+-git reset --HARD 2e8bf06
+
+### Git amend # agregar un pequeño cambios
+### Unirlos al mismo commit
+git add file
+git commit --amend ### añade el cambio al commit anterior
+
+### Contar ó Buscar en el codigo 
+-git grep -n palabra ### indica linea donde aparece
+-git grep -c palabra ### indica veces que se repite palabra
+### Contar ó Buscar en history de commit 
+-git log -S "palabra" ### indica veces q se repite palabra
+
+### cambios en archivos
+-git blame -c archivo 
+-git blame --help
+-git opcion --help
+-git blame archivo -L35,53 # Indica quien cambio esas lineas 
+
+### Ver ramas remotas
+git branch -r
+git branch -a ### ve remotas y local

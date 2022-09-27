@@ -1,0 +1,26 @@
+pygtk ##interfaces grafica
+tkinter # interfaz best
+psycopg  #postgres
+pip #instalar librerias
+ejemplos
+pip install scipy
+pip uninstall scipy
+pip list ###lista paquetes
+#librerias "man" 
+import numpy
+help (numpy)
+#web librerias
+pypi.org
+### Entornos Virtuales
+mkdir virtualenvs
+virtualenv nombre_directorio
+ls nombre_directorio/bin/activate
+## activar
+source virtualenvs/nombre_directorio/bin/activate
+## desactivar
+deactivate
+### pipenv
+cd carpeta # pipenv install paquetes en este entorno
+pipenv shell
+### instalar desde github
+pipenv install -e github+https://github.com/url
